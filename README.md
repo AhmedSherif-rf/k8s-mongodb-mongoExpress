@@ -1,16 +1,19 @@
-# siemens
-## _the task of creating pipeline to build and deploy the PYTHON app for 
+# Instabug
+## _this project is about connecting the mongo DB to the web app mongo DB Express_ 
 
 ## Features
 
-- build a python application with based on a lite weight python image 
-- using Jenkins file for make sure of CICD life cycle 
-- Deploy a simple container on the 
+- creating the monogo DB and mongo Express Deployments, services, configMaps and secrets
+- using a lite weight images
+- Deploy a simple pods on the localhost user minikube
 
 # How to use the application
-- create a job on jenkins server 
-- use the github repo URL in the pipeline script SCM 
-- Github repo URL [pyapp] (https://github.com/AhmedSherif-rf/pyapp.git)
-
+- clone the repo 
+- install minikube and start the cluster 
+- Github repo URL [monogoapp] (https://github.com/AhmedSherif-rf/k8s-mongodb-mongoExpress.git)
+- use the command - kubectl apply -f fileName.yml  
+- do the step number 4 for all files 
+- finally use command - minikube service mongo-express-service
+- you will redirected to the browser on the application service
 ## Check if it work
 - Just enter the localhost and user command [docekr attach image-id]
